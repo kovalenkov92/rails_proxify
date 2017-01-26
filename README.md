@@ -1,7 +1,6 @@
 # RailsProxify
 
-[![Gem Version](https://badge.fury.io/rb/rails_proxify.svg)](https://badge.fury.io/rb/rails_proxify)
-
+![Gem Version](https://img.shields.io/badge/gem%20version-0.0.1-brightgreen.svg)
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -14,10 +13,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install rails_proxify
-    
 Mount rails_proxify engine to your routes. Add this to routes.rb
 
 ```ruby
