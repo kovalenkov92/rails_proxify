@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Vitaliy Kovalenko']
   spec.email         = ['kovalenko.v92@gmail.com']
 
-  spec.summary       = %q{Proxify all your http requests from browser.}
-  spec.description   = %q{Proxify all your http requests from browser to talk to remote servers using json.}
+  spec.summary       = %q{Rails based simple proxy.}
+  spec.description   = %q{Proxify all your http requests from browser to talk to remote servers in context of your rails server using json.}
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
