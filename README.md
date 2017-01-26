@@ -1,6 +1,6 @@
 # RailsProxify
 
-![Gem Version](https://img.shields.io/badge/gem%20version-0.0.1-brightgreen.svg)
+![Gem Version](https://img.shields.io/badge/gem%20version-0.0.2-brightgreen.svg)
 ## Installation
 
 Add this line to your application's Gemfile:
