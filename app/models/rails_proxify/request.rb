@@ -3,7 +3,7 @@ class RailsProxify::Request
   def initialize(options = {})
     @errors = []
     @options = options
-    @result= nil
+    @result = nil
     @response = nil
   end
 
@@ -22,6 +22,8 @@ class RailsProxify::Request
     @options[:headers].to_h.each_key do |header_name|
       if possible_headers.include?(header_name.downcase.underscore)
         req[header_name.downcase.gsub('_', '-')] = @options[:headers][header_name]
+      elsif header_name.downcase == 'http_authorization'
+        req['authorization'] = @options[:headers]['Authorization']
       end
     end
 
