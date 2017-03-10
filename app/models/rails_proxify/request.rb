@@ -27,7 +27,9 @@ class RailsProxify::Request
       end
     end
 
-    req.body = @options[:body].to_json
+    unless %w(get delete).include? @options[:method].downcase
+      req.body = @options[:body].to_json
+    end
 
     begin
       @response = http.request(req)
